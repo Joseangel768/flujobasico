@@ -30,6 +30,7 @@ jobs:
 
       - name: Compilar solución
         run: dotnet build --no-restore --configuration Release
-
+        
       - name: Ejecutar tests
-        run: dotnet test --no-build --verbosity normal --configuration Release
+        run: dotnet test TestProject2/TestProject2.csproj --no-build --configuration Release --verbosity normal
+
